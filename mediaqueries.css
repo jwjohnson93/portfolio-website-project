@@ -1,4 +1,8 @@
 @media screen and (max-width: 1400px) {
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
 	#profile {
 		height: 83vh;
 		margin-bottom: 6rem;
@@ -9,6 +13,10 @@
 }
 
 @media screen and (max-width: 1200px) {
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
 	#desktop-nav {
 		display: none;
 	}
@@ -44,6 +52,10 @@
 }
 
 @media screen and (max-width: 600px) {
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
 	#contact,
 	footer {
 		height: 40vh;
