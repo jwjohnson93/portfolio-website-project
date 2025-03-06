@@ -12,6 +12,12 @@
 	<body>
 		<nav id="desktop-nav">
 			<div class="logo">Jeremy Johnson</div>
+				<div class="dark-mode-toggle">
+					<label class="switch">
+						<input type="checkbox" onclick="toggleDarkMode()">
+						<span class="slider round"></span>
+					</label>
+				</div>
 			<div>
 				<ul class="nav-links">
 					<li><a href="#about">About</a></li>
@@ -261,7 +267,7 @@
 					<ul class="nav-links">
 						<li><a href="#about">About</a></li>
 						<li><a href="#experience">Experience</a></li>
-						<li><a href="#projects">Projects</a></li>
+						<li><p style="display:none"><a href="#projects">Projects</a></p></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</div>

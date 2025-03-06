@@ -41,6 +41,10 @@
 	.about-containers {
 		margin: top 0;
 	}
+    .dark-mode-toggle {
+        top: 15px;
+        right: 60px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -96,4 +100,8 @@
 	.text-container {
 		text-align: justify;
 	}
+    .dark-mode-toggle {
+        top: 15px;
+        right: 50px;
+    }
 }
