@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>My Portfolio</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>Jeremy Johnson's Portfolio</title>
 		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="mediaqueries.css" />
 		<meta name="description" content="Jeremy Johnson - Cloud Engineer Portfolio showcasing experience and projects">
@@ -29,6 +29,12 @@
 		</nav>
 		<nav id="hamburger-nav">
 			<div class="logo">Jeremy Johnson</div>
+			<div class="dark-mode-toggle mobile-dark-mode">
+				<label class="switch">
+					<input type="checkbox" onclick="toggleDarkMode()">
+					<span class="slider round"></span>
+				</label>
+			</div>
 			<div class="hamburger-menu">
 				<div class="hamburger-icon" onclick="toggleMenu()" aria-label="Menu" aria-expanded="false">
 					<span></span>
@@ -36,10 +42,12 @@
 					<span></span>
 				</div>
 				<div class="menu-links">
-					<li><a href="#about" onclick="toggleMenu()">About</a></li>
-					<li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-					<li><p style="display:none"><a href="#projects" onclick="toggleMenu()">Projects</a></p></li>
-					<li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+					<ul>
+						<li><a href="#about" onclick="toggleMenu()">About</a></li>
+						<li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+						<li><p style="display:none"><a href="#projects" onclick="toggleMenu()">Projects</a></p></li>
+						<li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+					</ul>
 				</div>
 			</div>
 		</nav>
@@ -48,6 +56,9 @@
 				<img
 					src="./assets/profile-pic.png"
 					alt="Jeremy Johnson profile picture"
+					loading="eager"
+					width="400"
+					height="400"
 				/>
 			</div>
 			<div class="section__text">
@@ -70,7 +81,7 @@
 						src="./assets/linkedin.png"
 						alt="My LinkedIn profile"
 						class="icon"
-						onclick="location.href='https://www.linkedin.com/in/jwjohnson93'"
+						onclick="location.href='https://www.linkedin.com/in/jeremyjohnson-'"
 					/>
 					<img
 						src="./assets/github.png"
@@ -90,6 +101,9 @@
 						src="./assets/about-pic.png"
 						alt="Profile picture"
 						class="about-pic"
+						loading="lazy"
+						width="400"
+						height="400"
 					/>
 				</div>
 				<div class="about-details-container">
@@ -101,7 +115,7 @@
 								class="icon"
 							/>
 							<h3>Experience</h3>
-							<p>2+ years <br />Cloud Engineer</p>
+							<p>3+ years <br />Cloud Engineer</p>
 						</div>
 						<div class="details-container">
 							<img
@@ -110,16 +124,12 @@
 								class="icon"
 							/>
 							<h3>Education</h3>
-							<p>B.S Information Technology <br />B.S. Business Management</p>
+							<p>B.S. Information Technology <br />B.S. Business Management</p>
 						</div>
 					</div>
 					<div class="text-container">
 						<p>
-							Hello! I'm Jeremy Johnson, a Cloud Engineer with 3+ years of
-							experience. I have a Bachelor's degree in Information Technology and
-							Business Management. I have a passion for technology and enjoy
-							working with cloud technologies. I am always looking for new
-							opportunities to learn and grow in my career.
+							Hello! I'm Jeremy Johnson, a Cloud Engineer with 3+ years of experience in leveraging cloud technologies to drive business efficiency and continuity. With a Bachelor's degree in Information Technology and Business Management, I am passionate about connecting innovative technology solutions to real-world business challenges. I thrive on embracing new technologies to enhance operations, streamline processes, and ensure long-term resilience. Always eager to learn and grow, I continuously seek opportunities to refine my skills and make a meaningful impact.
 						</p>
 					</div>
 				</div>
@@ -138,8 +148,15 @@
 							<article>
 								<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
 								<div>
-									<h3>Intune</h3>
+									<h3>Azure Cloud</h3>
 									<p>Experienced</p>
+								</div>
+							</article>
+							<article>
+								<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+								<div>
+									<h3>Azure DevOps</h3>
+									<p>Basic</p>
 								</div>
 							</article>
 							<article>
@@ -152,8 +169,8 @@
 							<article>
 								<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
 								<div>
-									<h3>Azure DevOps</h3>
-									<p>Basic</p>
+									<h3>Intune</h3>
+									<p>Experienced</p>
 								</div>
 							</article>
 						</div>
@@ -257,7 +274,7 @@
 				</div>
 				<div class="contact-info-container">
 					<img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-					<p><a href="https://www.linkedin.com/in/jwjohnson93">LinkedIn</a></p>
+					<p><a href="https://www.linkedin.com/in/jeremyjohnson-">LinkedIn</a></p>
 				</div>
 			</div>
 		</section>
