@@ -67,4 +67,10 @@ function initMobileOptimizations() {
 document.addEventListener('DOMContentLoaded', function() {
     loadDarkModePreference();
     initMobileOptimizations();
+    
+    const profilePic = document.querySelector("img[src='./assets/profile-pic.png']");
+    profilePic.src = "assets/images/profile-pic.png";
+    
+    const aboutPic = document.querySelector("img[src='./assets/about-pic.png']");
+    aboutPic.src = "assets/images/about-pic.png";
 });

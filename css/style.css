@@ -34,6 +34,7 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     transition: all 0.5s ease; /* Smooth transition for all properties */
+    background-image: url('../assets/images/background.jpg');
 }
 
 a {
@@ -158,6 +159,7 @@ a:hover {
 	text-decoration: none;
 	transition: all 0.3s ease-in-out;
 	color: var(--text-color);
+    background-image: url('../assets/icons/menu-icon.png');
 }
 
 .menu-links a:hover {
@@ -270,6 +272,7 @@ section {
 	cursor: pointer;
 	height: 2rem;
     transition: transform 0.3s ease;
+    background-image: url('../assets/icons/icon-default.png');
 }
 
 .icon:hover {
