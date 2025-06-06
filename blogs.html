@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>Jeremy Johnson's Blog</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/mediaqueries.css" />
+		<meta name="description" content="Jeremy Johnson - Blog posts about cloud engineering, technology, and professional development">
+	</head>
+	<body>
+		<nav id="desktop-nav">
+			<div class="logo">Jeremy Johnson</div>
+				<div class="dark-mode-toggle">
+					<label class="switch">
+						<input type="checkbox" onclick="toggleDarkMode()">
+						<span class="slider round"></span>
+					</label>
+				</div>
+			<div>
+				<ul class="nav-links">
+					<li><a href="index.html#about">About</a></li>
+					<li><a href="index.html#experience">Experience</a></li>
+					<li><p style="display:none"><a href="index.html#projects">Projects</a></p></li>
+					<li><a href="index.html#contact">Contact</a></li>
+					<li><a href="blogs.html" class="active">Blog</a></li>
+				</ul>
+			</div>
+		</nav>
+		<nav id="hamburger-nav">
+			<div class="logo">Jeremy Johnson</div>
+			<div class="dark-mode-toggle mobile-dark-mode">
+				<label class="switch">
+					<input type="checkbox" onclick="toggleDarkMode()">
+					<span class="slider round"></span>
+				</label>
+			</div>
+			<div class="hamburger-menu">
+				<div class="hamburger-icon" onclick="toggleMenu()" aria-label="Menu" aria-expanded="false">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="menu-links">
+					<ul>
+						<li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+						<li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+						<li><p style="display:none"><a href="index.html#projects" onclick="toggleMenu()">Projects</a></p></li>
+						<li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+						<li><a href="blogs.html" onclick="toggleMenu()">Blog</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<section id="blog">
+			<p class="section__text__p1">Welcome to My</p>
+			<h1 class="title">Blog</h1>
+			
+			<div class="blog-posts-container">
+				<div class="details-container blog-post">
+					<h2 class="blog-title">Using GitHub Copilot to learn to code</h2>
+					<p class="blog-date">April 17, 2025</p>
+					<p class="blog-summary">How to utilize GitHub Copilot to help your journey of learning to code.</p>
+					<div class="btn-container">
+						<button class="btn btn-color-2" onclick="location.href='blogs/learn-code-with-github-copilot.html'">
+							Read More
+						</button>
+					</div>
+				</div>
+                
+                
+		<section id="footer">
+			<nav>
+				<div class="nav-links-container">
+					<ul class="nav-links">
+						<li><a href="index.html#about">About</a></li>
+						<li><a href="index.html#experience">Experience</a></li>
+						<li><p style="display:none"><a href="index.html#projects">Projects</a></p></li>
+						<li><a href="index.html#contact">Contact</a></li>
+						<li><a href="blogs.html">Blog</a></li>
+					</ul>
+				</div>
+			</nav>
+			<p>Copyright &#169; 2024 Jeremy Johnson. All rights reserved.</p>
+		</section>
+		<script src="script.js"></script>
+	</body>
+</html>
