@@ -1,29 +1,37 @@
 function toggleMenu() {
     const menu = document.querySelector(".menu-links");
     const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");    
-    icon.classList.toggle("open");    
+    if (!menu || !icon) return;
+
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
+
+    const isOpen = menu.classList.contains("open");
+    icon.setAttribute("aria-expanded", String(isOpen));
 }
 
 function closeMenuOnClickOutside(event) {
     const menu = document.querySelector(".menu-links");
     const icon = document.querySelector(".hamburger-icon");
     const hamburgerMenu = document.querySelector(".hamburger-menu");
-    
-    if (menu.classList.contains("open") && 
-        !hamburgerMenu.contains(event.target)) {
+    if (!menu || !icon || !hamburgerMenu) return;
+
+    if (menu.classList.contains("open") && !hamburgerMenu.contains(event.target)) {
         menu.classList.remove("open");
         icon.classList.remove("open");
+        icon.setAttribute("aria-expanded", "false");
     }
 }
 
 function closeMenuOnScroll() {
     const menu = document.querySelector(".menu-links");
     const icon = document.querySelector(".hamburger-icon");
-    
+    if (!menu || !icon) return;
+
     if (menu.classList.contains("open")) {
         menu.classList.remove("open");
         icon.classList.remove("open");
+        icon.setAttribute("aria-expanded", "false");
     }
 }
 
@@ -67,10 +75,4 @@ function initMobileOptimizations() {
 document.addEventListener('DOMContentLoaded', function() {
     loadDarkModePreference();
     initMobileOptimizations();
-    
-    const profilePic = document.querySelector("img[src='./assets/profile-pic.png']");
-    profilePic.src = "assets/images/profile-pic.png";
-    
-    const aboutPic = document.querySelector("img[src='./assets/about-pic.png']");
-    aboutPic.src = "assets/images/about-pic.png";
 });
