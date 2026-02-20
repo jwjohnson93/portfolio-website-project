@@ -340,6 +340,30 @@ section {
 	gap: 1rem;
 }
 
+/* Dark mode button contrast fixes */
+body.dark-mode .btn-color-1 {
+	background: #f3f4f6;
+	color: #111827;
+	border-color: #f3f4f6;
+}
+
+body.dark-mode .btn-color-1:hover {
+	background: #ffffff;
+	color: #000000;
+	border-color: #ffffff;
+}
+
+body.dark-mode .btn-color-2 {
+	border-color: #d1d5db;
+	color: #f3f4f6;
+}
+
+body.dark-mode .btn-color-2:hover {
+	background: #f3f4f6;
+	color: #111827;
+	border-color: #f3f4f6;
+}
+
 /* ABOUT SECTION */
 
 #about {
