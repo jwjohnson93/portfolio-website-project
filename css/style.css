@@ -14,6 +14,8 @@
     --paragraph-color: rgb(85, 85, 85);
     --link-color: #1f4ed8;
     --link-hover-color: #1d4ed8;
+    --nav-link-color: #111827;
+    --nav-link-hover-color: #334155;
     --box-background-color: #f0f0f0;
     --box-border-color: #cccccc;
     --subtitle-color: rgb(85, 85, 85);
@@ -25,6 +27,8 @@ body.dark-mode {
     --paragraph-color: #bbbbbb;
     --link-color: #cccccc;
     --link-hover-color: #ff00ff;
+    --nav-link-color: #e5e7eb;
+    --nav-link-hover-color: #f8fafc;
     --box-background-color: #333333;
     --box-border-color: #666666;
     --subtitle-color: #dddddd;
@@ -99,6 +103,19 @@ a.active {
     font-weight: bold;
     text-decoration: underline;
     text-underline-offset: 1rem;
+}
+
+/* Keep top/bottom navigation links neutral and modern */
+#desktop-nav .nav-links a,
+#hamburger-nav .menu-links a,
+#footer .nav-links a {
+    color: var(--nav-link-color);
+}
+
+#desktop-nav .nav-links a:hover,
+#hamburger-nav .menu-links a:hover,
+#footer .nav-links a:hover {
+    color: var(--nav-link-hover-color);
 }
 
 .logo {
