@@ -3,11 +3,17 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Jeremy Johnson's Portfolio</title>
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/mediaqueries.css" />
-		<meta name="description" content="Jeremy Johnson - Cloud Engineer Portfolio showcasing experience and projects">
+		<meta name="description" content="Jeremy Johnson - Cloud Engineer portfolio featuring projects, achievements, and tools.">
+		<link rel="canonical" href="https://jeremy-j.dev/" />
+		<meta property="og:title" content="Jeremy Johnson | Cloud Engineer" />
+		<meta property="og:description" content="Cloud engineering work, achievements, and tools Jeremy uses regularly." />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://jeremy-j.dev/" />
+		<meta name="twitter:card" content="summary" />
 	</head>
 	<body>
 		<nav id="desktop-nav">
@@ -22,7 +28,9 @@
 				<ul class="nav-links">
 					<li><a href="#about">About</a></li>
 					<li><a href="#experience">Experience</a></li>
-					<li><p style="display:none"><a href="#projects">Projects</a></p></li>
+					
+					<li><a href="#achievements">Achievements</a></li>
+					<li><a href="#tools">Tools</a></li>
 					<li><a href="#contact">Contact</a></li>
 					<li><a href="blogs.html">Blog</a></li>
 				</ul>
@@ -46,7 +54,9 @@
 					<ul>
 						<li><a href="#about" onclick="toggleMenu()">About</a></li>
 						<li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-						<li><p style="display:none"><a href="#projects" onclick="toggleMenu()">Projects</a></p></li>
+						
+						<li><a href="#achievements" onclick="toggleMenu()">Achievements</a></li>
+						<li><a href="#tools" onclick="toggleMenu()">Tools</a></li>
 						<li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
 						<li><a href="blogs.html" onclick="toggleMenu()">Blog</a></li>
 					</ul>
@@ -78,19 +88,13 @@
 						Contact Info
 					</button>
 				</div>
-				<div id="socials-containter">
-					<img
-						src="assets/icons/linkedin.png"
-						alt="My LinkedIn profile"
-						class="icon"
-						onclick="location.href='https://www.linkedin.com/in/jeremyjohnson-'"
-					/>
-					<img
-						src="assets/icons/github.png"
-						alt="My GitHub profile"
-						class="icon"
-						onclick="location.href='https://www.github.com/jwjohnson93'"
-					/>
+				<div id="socials-container">
+					<a href="https://www.linkedin.com/in/jeremyjohnson-" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+						<img src="assets/icons/linkedin.png" alt="LinkedIn" class="icon" />
+					</a>
+					<a href="https://www.github.com/jwjohnson93" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+						<img src="assets/icons/github.png" alt="GitHub" class="icon" />
+					</a>
 				</div>
 			</div>
 		</section>
@@ -215,57 +219,91 @@
 			<img src="assets/icons/arrow.png" alt="Arrow icon" class="icon arrow"
 			onclick="location.href='./#projects'" />
 		</section>
-		<p style="display:none"><section id="projects">
-			<p class="section__text__p1">Browse My Recent</p>
+		<section id="projects">
+			<p class="section__text__p1">Selected Work</p>
 			<h1 class="title">Projects</h1>
 			<div class="experience-details-container">
 				<div class="about-containers">
-				<div class="details-container color-container">
-					<div class="article-container">
-						<img src="assets/images/project-1.png" alt="Project 1" class="project-img" loading="lazy"/>
+					<div class="details-container color-container">
+						<h2 class="experience-sub-title project-title">Policy as Code (EPAC)</h2>
+						<p class="project-summary">Implemented Azure Enterprise Policy as Code to enforce consistent, compliant guardrails across the environment using Git-based governance and automated pipeline deployment.</p>
+						<p class="project-stack"><strong>Stack:</strong> Azure EPAC, JSON, Azure DevOps Pipelines, GitHub</p>
 					</div>
-					<h2 class="experience-sub-title project-title">Project One</h2>
-					<div class="btn-container">
-							<button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/jwjohnson93'">
-								GitHub
-							</button>
-							<button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/jwjohnson93'">
-								Live Demo
-							</button>
+					<div class="details-container color-container">
+						<h2 class="experience-sub-title project-title">Intune Migration</h2>
+						<p class="project-summary">Led migration of device and policy management from traditional Active Directory processes to Intune, modernizing policy design instead of a direct lift-and-shift.</p>
+						<p class="project-stack"><strong>Stack:</strong> Microsoft Intune, Entra ID, Microsoft 365</p>
 					</div>
+				</div>
 			</div>
-				<div class="details-container color-container">
-					<div class="article-container">
-						<img src="assets/images/project-2.png" alt="Project 2" class="project-img"/>
+			<img src="assets/icons/arrow.png" alt="Arrow icon" class="icon arrow"
+			onclick="location.href='./#achievements'" />
+		</section>
+		<section id="achievements">
+			<p class="section__text__p1">Milestones & Highlights</p>
+			<h1 class="title">Achievements</h1>
+			<div class="experience-details-container">
+				<div class="about-containers">
+					<div class="details-container">
+						<h2 class="experience-sub-title">Education</h2>
+						<ul class="simple-list">
+														<li>East Carolina University — B.S. Business Management</li>
+							<li>Western Governors University — B.S. Information Technology</li>
+						</ul>
 					</div>
-					<h2 class="experience-sub-title project-title">Project Two</h2>
-					<div class="btn-container">
-							<button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/jwjohnson93'">
-								GitHub
-							</button>
-							<button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/jwjohnson93'">
-								Live Demo
-							</button>
+					<div class="details-container">
+						<h2 class="experience-sub-title">Certifications</h2>
+						<ul class="simple-list">
+							<li>CompTIA A+</li>
+							<li>CompTIA Network+</li>
+							<li>CompTIA Security+</li>
+							<li>AWS Certified Cloud Practitioner</li>
+							<li>ITIL Foundation</li>
+							<li>CompTIA Project+</li>
+						</ul>
 					</div>
+					<div class="details-container">
+						<h2 class="experience-sub-title">Athletic Milestones</h2>
+						<ul class="simple-list">
+							<li>Daily 5K run streak started August 2024</li>
+							<li>Marathon PR: 3:11:00</li>
+							<li>Half Marathon PR: 1:26:36</li>
+							<li>50K PR: 5:33:18</li>
+						</ul>
+					</div>
+				</div>
 			</div>
-				<div class="details-container color-container">
-					<div class="article-container">
-						<img src="assets/images/project-3.png" alt="Project 3" class="project-img"/>
+			<img src="assets/icons/arrow.png" alt="Arrow icon" class="icon arrow"
+			onclick="location.href='./#tools'" />
+		</section>
+		<section id="tools">
+			<p class="section__text__p1">What I Use Regularly</p>
+			<h1 class="title">Tools</h1>
+			<div class="experience-details-container">
+				<div class="about-containers">
+					<div class="details-container">
+						<h2 class="experience-sub-title">Cloud & Identity</h2>
+						<ul class="simple-list">
+							<li>Azure Cloud</li>
+							<li>Microsoft Entra</li>
+							<li>Microsoft 365</li>
+							<li>Google Workspace</li>
+						</ul>
 					</div>
-					<h2 class="experience-sub-title project-title">Project Three</h2>
-					<div class="btn-container">
-							<button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/jwjohnson93'">
-								GitHub
-							</button>
-							<button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/jwjohnson93'">
-								Live Demo
-							</button>
+					<div class="details-container">
+						<h2 class="experience-sub-title">Developer Workflow</h2>
+						<ul class="simple-list">
+							<li>VS Code</li>
+							<li>GitHub</li>
+							<li>Azure DevOps</li>
+							<li>Codex</li>
+						</ul>
 					</div>
+				</div>
 			</div>
-		</div>
 			<img src="assets/icons/arrow.png" alt="Arrow icon" class="icon arrow"
 			onclick="location.href='./#contact'" />
-		</section></p>
+		</section>
 		<section id="contact">
 			<p class="section__text__p1">Get in Touch</p>
 			<h1 class="title">Contact Me</h1>
@@ -286,7 +324,9 @@
 					<ul class="nav-links">
 						<li><a href="#about">About</a></li>
 						<li><a href="#experience">Experience</a></li>
-						<li><p style="display:none"><a href="#projects">Projects</a></p></li>
+						
+						<li><a href="#achievements">Achievements</a></li>
+						<li><a href="#tools">Tools</a></li>
 						<li><a href="#contact">Contact</a></li>
 						<li><a href="blogs.html">Blog</a></li>
 					</ul>
