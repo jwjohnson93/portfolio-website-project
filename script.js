@@ -61,6 +61,30 @@ function loadDarkModePreference() {
     }
 }
 
+
+function initMenuAccessibility() {
+    const icon = document.querySelector(".hamburger-icon");
+    if (!icon) return;
+
+    icon.setAttribute("role", "button");
+    icon.setAttribute("tabindex", "0");
+
+    icon.addEventListener("keydown", function (event) {
+        if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            toggleMenu();
+        }
+        if (event.key === "Escape") {
+            const menu = document.querySelector(".menu-links");
+            if (menu?.classList.contains("open")) {
+                menu.classList.remove("open");
+                icon.classList.remove("open");
+                icon.setAttribute("aria-expanded", "false");
+            }
+        }
+    });
+}
+
 function initMobileOptimizations() {
     // Add event listeners for mobile menu
     document.addEventListener('click', closeMenuOnClickOutside);
@@ -75,4 +99,5 @@ function initMobileOptimizations() {
 document.addEventListener('DOMContentLoaded', function() {
     loadDarkModePreference();
     initMobileOptimizations();
+    initMenuAccessibility();
 });
