@@ -484,7 +484,6 @@ article.icon {
 
 #projects {
 	position: relative;
-	display: none;
 }
 
 .color-container {
@@ -506,6 +505,32 @@ article.icon {
 .project-btn {
 	color: black;
 	border-color: rgb(163, 163, 163);
+}
+
+
+.project-summary {
+    text-align: left;
+    margin: 0.5rem 0 1rem;
+}
+
+.project-stack {
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.simple-list {
+    text-align: left;
+    margin-left: 1rem;
+}
+
+.simple-list li {
+    margin-bottom: 0.5rem;
+}
+
+#achievements,
+#tools {
+    position: relative;
+    margin-bottom: 2rem;
 }
 
 /* BLOG SECTION */
