@@ -757,7 +757,8 @@ footer p {
     bottom: 2px;
     background-color: white;
     transition: .4s;
-    font-size: 12px;
+    font-size: 11px;
+    line-height: 1;
 }
 
 input:checked + .slider {
@@ -780,8 +781,7 @@ input:checked + .slider:before {
 /* Touch-friendly targets */
 body.touch-device a,
 body.touch-device button,
-body.touch-device .icon,
-body.touch-device input[type="checkbox"] + .slider {
+body.touch-device .icon {
     min-height: 44px;
     min-width: 44px;
 }
@@ -803,4 +803,26 @@ input:focus-visible + .slider {
     outline: 3px solid #60a5fa;
     outline-offset: 3px;
     border-radius: 8px;
+}
+
+
+/* Mobile nav dark mode alignment fixes */
+#hamburger-nav .dark-mode-toggle {
+    position: static;
+    top: auto;
+    right: auto;
+    margin-left: auto;
+    margin-right: 0.75rem;
+}
+
+#hamburger-nav .switch {
+    width: 34px;
+    height: 20px;
+}
+
+#hamburger-nav .slider:before {
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
 }
